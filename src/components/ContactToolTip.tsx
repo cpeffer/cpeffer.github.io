@@ -3,13 +3,16 @@ import '../styles/ContactToolTip.css';
 
 const ContactTooltip: React.FC = () => {
   return (
-    <div className="tooltip-container">
-      <span className="tooltip-trigger">Contact</span>
-      {/* <div className="tooltip-content">
-        <p>Email: colton@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Location: City, Country</p>
-      </div> */}
+    <div>
+    <div className="container">
+    <span className="tooltiptext">
+      <p>coltpeffer@gmail.com</p>
+      <p>(310) 741-9002</p>
+    </span>
+
+    Contact
+
+    </div>
     </div>
   );
 };

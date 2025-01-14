@@ -8,14 +8,14 @@ const Header: React.FC = () => {
       <h1>
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Colton Peffer</Link>
       </h1>
-      <div>
-        <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>About </Link>
-        <ContactTooltip/> 
-        {/* <button style={{ marginLeft: '10px' }}>Contact</button> */}
-        <a href="https://www.linkedin.com/in/coltonpeffer" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px',  textDecoration: 'none', color: 'inherit' }}>
-            LinkedIn
-        </a>
-      </div>
+    <div style={{ display: 'flex', gap: '20px' }}>
+      <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>About </Link>
+      <ContactTooltip/> 
+      {/* <button style={{ marginLeft: '10px' }}>Contact</button> */}
+      <a href="https://www.linkedin.com/in/coltonpeffer" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+        LinkedIn
+      </a>
+    </div>
     </header>
   );
 };
