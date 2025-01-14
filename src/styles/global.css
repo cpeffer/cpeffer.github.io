@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; /* Apply the font to the body */
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.tooltip-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  div:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+  }
