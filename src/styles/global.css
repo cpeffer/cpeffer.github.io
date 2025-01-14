@@ -2,15 +2,17 @@
 
 body {
   margin: 0;
-  padding: 0 12px;
+  padding: 0 10px;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif; /* Apply the font to the body */
+  color: #DEF7EB;
 }
 
 .App {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 12px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
 }
 
 .tooltip-content {
@@ -23,3 +25,22 @@ body {
     visibility: visible;
     opacity: 1;
   }
+
+.welcome-message {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 50vh; 
+margin: 0 20vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #2F4C37;
+  color: #DEF7EB;
+}
