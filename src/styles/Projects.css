@@ -21,17 +21,27 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  height: 350px; /* Adjust the height for better aspect ratio */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-container {
-  position: relative;
-  padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    margin: 0 auto; /* Center align horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
   transition: opacity 0.3s ease;
 }
 
@@ -58,4 +68,12 @@
 
 .project-card:hover .project-description {
   opacity: 1;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7%; /* Adjust the height as needed */
+  text-align: center;
 }
