@@ -1,39 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+  --primary-color: #B6D2D7;
+  --secondary-color: #759798;
+  --accent-color: #DC2D29;
+  --background-color: #292F2A;
+  --text-color: #FCF6E0;
+  --link-color: #61dafb;
+}
+
 body {
   margin: 0;
   padding: 0 10px;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif; /* Apply the font to the body */
-  color: #DEF7EB;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .App {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
 }
 
 .tooltip-content {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  div:hover .tooltip-content {
-    visibility: visible;
-    opacity: 1;
-  }
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+div:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
 
 .welcome-message {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-height: 50vh; 
-margin: 0 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50vh; 
+  margin: 0 20vh;
+  /* background-color: var(--accent-color); */
 }
 
 .footer {
@@ -41,6 +52,4 @@ margin: 0 20vh;
   justify-content: center;
   align-items: center;
   height: 10vh;
-  background-color: #2F4C37;
-  color: #DEF7EB;
 }

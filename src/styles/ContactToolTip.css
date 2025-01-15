@@ -5,14 +5,14 @@
 .tooltiptext {
   visibility: hidden;
   position: absolute;
-  background-color: #555;
-  color: white;
+  background-color: var(--text-color);;
+  color: var(--accent-color);
   padding: 5px;
   border-radius: 5px;
   top: 100%; /* Position below the element */
   left: 50%;
   transform: translateX(-50%);
-  text-align: center; /* Center the text */
+text-align: center;
 }
 
 .container:hover .tooltiptext {
