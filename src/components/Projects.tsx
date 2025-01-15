@@ -38,8 +38,8 @@ const Projects: React.FC = () => {
     },
     {
       id: 4,
-      title: "Project Three",
-      description: "This is a brief description of project three.",
+      title: "Project four",
+      description: "This is a brief description of project four.",
       technologies: ["Java", "Spring Boot", "MySQL"],
       image: project4Image // Add image source
     }
