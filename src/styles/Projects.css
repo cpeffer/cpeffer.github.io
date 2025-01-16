@@ -77,3 +77,12 @@
   height: 7%; /* Adjust the height as needed */
   text-align: center;
 }
+
+.star {
+    color: lightgray;
+    font-size: 20px;
+  }
+  
+  .star.filled {
+    color: var(--accent-color);
+  }
