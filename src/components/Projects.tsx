@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import projects from '../data/projectsData';
 import '../styles/Projects.css';
 
@@ -21,7 +22,7 @@ const Projects: React.FC = () => {
       <div className="projects-card">
         <div className="project-grid">
           {projects.map((project) => (
-            <div key={project.id} className="project-card">
+            <Link key={project.id} to={`/projects/${project.id}`} className="project-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="project-container">
                 <img src={project.image} alt={project.title} className="project-image" />
                 <div className="project-description">
@@ -33,7 +34,7 @@ const Projects: React.FC = () => {
                 </div>
               </div>
               <h2 className="project-title">{project.title}</h2>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

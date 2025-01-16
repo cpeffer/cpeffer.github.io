@@ -7,6 +7,7 @@
   --background-color: #292F2A;
   --text-color: #FCF6E0;
   --link-color: #61dafb;
+  --green-color: #2F4C37;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif; /* Apply the font to the body */
   color: var(--text-color);
-  background-color: var(--background-color);
+  /* background-color: var(--green-color); */
 }
 
 .App {
@@ -41,9 +42,8 @@ div:hover .tooltip-content {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 50vh; 
+  height: 30vh; 
   margin: 0 20vh;
-  /* background-color: var(--accent-color); */
 }
 
 .footer {
