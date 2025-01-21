@@ -4,6 +4,9 @@ import project3Image from '../images/fileSystem.png';
 import project4Image from '../images/instagramClone.png';
 import project5Image from '../images/mapReduce.png';
 import project6Image from '../images/mlMoralAnalysis.png';
+import project7Image from '../images/Screenshot 2025-01-15 at 10.04.07 AM.png';
+import project8Image from '../images/Screenshot 2025-01-15 at 10.04.22 AM.png';
+import project9Image from '../images/wordleBot.png';
 
 interface Project {
   id: number;
@@ -71,6 +74,30 @@ interface Project {
         image: project5Image,
         difficulty: 2
     },
+    {
+        id: 7,
+        title: "E-commerce Platform",
+        briefDescription: "Developed a scalable e-commerce platform with user authentication, product listings, and a shopping cart.",
+        longeDescription: "Implemented features such as user authentication, product listings, shopping cart, and order processing. Utilized React for the frontend and Node.js for the backend, with MongoDB as the database.",
+        image: project7Image,
+        difficulty: 4
+      },
+      {
+        id: 8,
+        title: "Weather Forecast App",
+        briefDescription: "Created a weather forecast application that provides real-time weather data and forecasts.",
+        longeDescription: "Built a weather forecast application using React and integrated with a third-party weather API to provide real-time weather data and forecasts. Implemented features such as location search, current weather, and 7-day forecast.",
+        image: project8Image,
+        difficulty: 3
+      },
+      {
+        id: 9,
+        title: "Wordle Bot",
+        briefDescription: "My friend spoiled the Wordle for me a handful of times so I made a bot that texted him the word for the Wordle everyday at midnight.",
+        longeDescription: 'Not much more to learn about here. My friend thought he was being funny and I showed him that my major/career is pretty cool. The bot would text him from different numbers everday right at midnight the Wordle word. After about a week of him claiming it didn\'t bother him, he eventually caved and apologized. He said he would do everything he could to avoid seeing it but he would inevitably glance at the word and once you get any letters the Wordle\'s ruined. I love telling that story.',
+        image: project9Image,
+        difficulty: 1
+      }
   ];
   
   export default projects;
