@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+document.title = "Colton's Portfolio";
 root.render(
   <React.StrictMode>
     <App />
