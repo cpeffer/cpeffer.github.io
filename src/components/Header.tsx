@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Colton Peffer</Link>
       </h1>
     <div style={{ display: 'flex', gap: '20px' }}>
-      <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>About </Link>
+      <Link to="/aboutme" style={{ textDecoration: 'none', color: 'inherit' }}>About Me</Link>
       <ContactTooltip/> 
       <a href="https://www.linkedin.com/in/coltonpeffer" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
         LinkedIn
