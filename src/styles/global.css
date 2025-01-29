@@ -42,8 +42,8 @@ div:hover .tooltip-content {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 30vh; 
-  margin: 0 20vh;
+  padding: 20px; /* Add padding for more space */
+  margin: 0 auto; /* Center align horizontally */
 }
 
 .footer {
@@ -51,4 +51,8 @@ div:hover .tooltip-content {
   justify-content: center;
   align-items: center;
   height: 10vh;
+}
+
+p {
+  font-size: 1.1em;
 }
