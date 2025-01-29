@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ContactTooltip from './ContactToolTip';
 
+
 const Header: React.FC = () => {
   return (
     <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -14,6 +15,9 @@ const Header: React.FC = () => {
       <a href="https://www.linkedin.com/in/coltonpeffer" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
         LinkedIn
       </a>
+      <a href={"/pdfs/ColtonPefferResume.pdf"} download style={{ textDecoration: 'none', color: 'inherit' }}>
+        Resume
+        </a>
     </div>
     </header>
   );
