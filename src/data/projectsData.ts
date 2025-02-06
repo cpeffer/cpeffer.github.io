@@ -4,8 +4,6 @@ import project3Image from '../images/fileSystem.png';
 import project4Image from '../images/instagramClone.png';
 import project6Image from '../images/mlMoralAnalysis.png';
 import project9Image from '../images/wordleBot.png';
-import instaAccountCreation from '../images/instaAccountCreation.png';
-import instaExplore1 from '../images/instaExplore.png';
 import instaAccount from '../images/instaAccount.png';
 
 export interface Project {
