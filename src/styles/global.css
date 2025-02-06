@@ -6,6 +6,7 @@
   --accent-color: #DC2D29;
   --background-color: #292F2A;
   --text-color: #FCF6E0;
+  --highlight-color: #f2d97c;
   --link-color: #61dafb;
   --green-color: #2F4C37;
 }
@@ -23,6 +24,11 @@ body {
   margin: 0 auto;
   padding: 10px;
   justify-content: center;
+}
+
+h1{
+  font-size: 2.5em;
+  color: var(--text-color);
 }
 
 .tooltip-content {
