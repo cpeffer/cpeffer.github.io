@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
 import ContactTooltip from './ContactToolTip';
 
 
@@ -10,7 +8,6 @@ const Header: React.FC = () => {
     <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <h1>
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
-          <FontAwesomeIcon icon={faHome} style={{ marginRight: '8px' }} />
           Colton Peffer
         </Link>
       </h1>

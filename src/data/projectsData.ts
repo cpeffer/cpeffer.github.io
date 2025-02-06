@@ -8,7 +8,7 @@ import instaAccountCreation from '../images/instaAccountCreation.png';
 import instaExplore1 from '../images/instaExplore.png';
 import instaAccount from '../images/instaAccount.png';
 
-interface Project {
+export interface Project {
   id: number;
   title: string;
   briefDescription: string;
@@ -61,8 +61,6 @@ const projects: Project[] = [
     image: project4Image,
     images: [
       project4Image,
-      instaAccountCreation,
-      instaExplore1,
       instaAccount
     ],
     difficulty: 3
