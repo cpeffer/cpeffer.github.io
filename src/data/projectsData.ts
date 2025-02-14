@@ -5,6 +5,12 @@ import project4Image from '../images/instagramClone.png';
 import project6Image from '../images/mlMoralAnalysis.png';
 import project9Image from '../images/wordleBot.png';
 import instaAccount from '../images/instaAccount.png';
+import paperIntro from '../images/PaperIntro.png';
+import paperResults from '../images/PaperResults.png';
+import paperMethods from '../images/PaperMethods.png';
+import testing from '../images/testing.png';
+import testing2 from '../images/testing2.png';
+
 
 export interface Project {
   id: number;
@@ -20,20 +26,24 @@ export interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Machine Learning Moral Analysis",
+    briefDescription: 'Coauthored a research paper investigating the ability of ML models to predict human morality based solely on textual data from the Reddit community r/AmItheAsshole, utilizing various algorithms and techniques to analyze linguistic patterns and contextual features.',
+    longDescription: "This project was a culmination of my interests in machine learning and a result of my capstone course taken at the University of Michigan. For some background, this semester-long course required groups to create their own ML project centered around anything relating to human language. We had to find our own dataset, clean the data, perform different machine learning techniques on the data, and then write a research report. In my group's case, we chose to focus on the Reddit community r/AmItheAsshole, which is a popular forum where users post scenarios and ask if they are in the wrong. For example, an anonymous user might post an argument they’ve had with their spouse and ask others to determine if they were being the 'asshole' or their spouse was. The goal was to determine if machine learning models could accurately predict human morality based on text alone. In addition, we looked for features in the dataset that were more predictive of a specific outcome and thus could lend insight into why the community voted in the way they did. The results were fascinating and raised important questions about the ethical implications of using AI to make moral judgments. This project taught me what it actually means to be a ML engineer and the relentless cycle of cleaning data, training a model, and then analyzing the results. I am extremely proud of the paper that came out of it. Please feel free to read the paper below if this brief description sounded interesting.",
+    image: project6Image,
+    images: [
+      testing2,
+      testing,
+    ],
+    difficulty: 5,
+    pdfLink: "/pdfs/ColtonPefferMoralAnalysis.pdf" // Add the PDF link here
+  },
+  {
+    id: 2,
     title: "Thread Library",
     briefDescription: "Implemented my own thread library for a multiprocessor by writing the operating system functions for threads, mutexes, condition variables, and cpus.",
     longDescription: "This is undoubtedly the hardest project I have faced in my computer science career. It required more hours than any other project at a deeper level of thinking. This project demanded an intimate understanding of creating and swapping threads, thread lifetimes, timer and processor interruptions, CPU guarding, scheduling orders, and error handling. The difficulty lay in understanding all the possible states a thread could be left in and how to correctly return control from a thread back to the OS. Whenever I describe this project, I center it around solving 'the chicken or the egg' problem for computers: how does the OS correctly allow a thread to use the CPU while ensuring the thread won’t block, so the OS never loses control? Writing and debugging this project was extremely intricate due to multiple threads and concurrency. You might jump out of a thread at one point, return to the OS, go to a separate thread, never knowing when you will come back to the original thread. I also used shared pointers for the first time, which are extremely useful and helpful when dealing with concurrency. Overall, no project has given me more of a headache while also providing a feeling of elation from realizing an edge case I had not considered.",
     image: project1Image,
     difficulty: 5
-  },
-  {
-    id: 2,
-    title: "Machine Learning Moral Analysis",
-    briefDescription: 'Coauthored a research paper investigating the ability of ML models to predict human morality based solely on textual data from the Reddit community r/AmItheAsshole, utilizing various algorithms and techniques to analyze linguistic patterns and contextual features.',
-    longDescription: "This project was a culmination of my interests in machine learning and a result of my capstone course taken at the University of Michigan. For some background, this semester-long course required groups to create their own ML project centered around anything relating to human language. We had to find our own dataset, clean the data, perform different machine learning techniques on the data, and then write a research report. In my group's case, we chose to focus on the Reddit community r/AmItheAsshole, which is a popular forum where users post scenarios and ask if they are in the wrong. For example, an anonymous user might post an argument they’ve had with their spouse and ask others to determine if they were being the 'asshole' or their spouse was. The goal was to determine if machine learning models could accurately predict human morality based on text alone. In addition, we looked for features in the dataset that were more predictive of a specific outcome and thus could lend insight into why the community voted in the way they did. The results were fascinating and raised important questions about the ethical implications of using AI to make moral judgments. This project taught me what it actually means to be a ML engineer and the relentless cycle of cleaning data, training a model, and then analyzing the results. I am extremely proud of the paper that came out of it. Please feel free to read the paper below if this brief description sounded interesting.",
-    image: project6Image,
-    difficulty: 5,
-    pdfLink: "/pdfs/ColtonPefferMoralAnalysis.pdf" // Add the PDF link here
   },
   {
     id: 3,
