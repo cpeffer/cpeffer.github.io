@@ -1,25 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import projects from '../data/projectsData';
-import '../styles/Project.css'; 
+import { ProjectData } from '../data/projectsData';
+import '../styles/Project.css';
 
-const Project: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
+interface ProjectProps {
+  project: ProjectData;
+}
 
-  if (!id) {
-    return <div>Project not found</div>;
-  }
-
-  const project = projects.find((project) => project.id === parseInt(id));
-
-  if (!project) {
-    return <div>Project not found</div>;
-  }
-
+const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
     <div className="project-detail">
       <h1>{project.title}</h1>
-      <p>{project.longDescription}</p>
+      <p><strong>Takeaway:</strong> {project.takeaway}</p>
+      <p><strong>Context:</strong> {project.context}</p>
+      <p><strong>Technologies/Concepts:</strong> {project.technologies.join(', ')}</p>
       {project.pdfLink && (
         <a href={project.pdfLink} download style={{ textDecoration: 'none', color: 'inherit' }}>
           <button>Download PDF</button>

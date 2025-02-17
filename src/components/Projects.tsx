@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import projects, {Project} from '../data/projectsData';
+import projects, {ProjectData} from '../data/projectsData';
 import Modal from './Modal';
+import Project from './Project';
 import '../styles/Projects.css';
 
 const Projects: React.FC = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
 
   const renderStars = (difficulty: number) => {
     const stars = [];
@@ -18,7 +19,7 @@ const Projects: React.FC = () => {
     return stars;
   };
 
-  const handleProjectClick = (project: Project) => {
+  const handleProjectClick = (project: ProjectData) => {
     setSelectedProject(project);
   };
 
@@ -36,7 +37,7 @@ const Projects: React.FC = () => {
               <div className="project-container">
                 <img src={project.image} alt={project.title} className="project-image" />
                 <div className="project-description">
-                  <p style={{ paddingLeft: '10px', paddingRight: '10px' }}>{project.briefDescription}</p>
+                  <p style={{ paddingLeft: '10px', paddingRight: '10px' }}>{project.overview}</p>
                   <div className="project-difficulty" style={{ paddingLeft: '10px', paddingRight: '10px' }}>
                     Difficulty: {renderStars(project.difficulty)}
                   </div>
@@ -51,22 +52,7 @@ const Projects: React.FC = () => {
 
       <Modal show={!!selectedProject} onClose={handleCloseModal}>
         {selectedProject && (
-          <div className="project-detail">
-            <h1>{selectedProject.title}</h1>
-            <p>{selectedProject.longDescription}</p>
-            {selectedProject.pdfLink && (
-              <a href={selectedProject.pdfLink} download style={{ textDecoration: 'none', color: 'inherit' }}>
-                <button>Download PDF</button>
-              </a>
-            )}
-            {selectedProject.images && selectedProject.images.length > 0 && (
-              <div className="project-images-grid">
-                {selectedProject.images.map((image, index) => (
-                  <img key={index} src={image} alt={`${selectedProject.title} screenshot ${index + 1}`} className="project-image" />
-                ))}
-              </div>
-            )}
-          </div>
+          <Project project={selectedProject} />
         )}
       </Modal>
     </div>
