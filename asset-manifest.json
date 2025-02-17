@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9df12cd1.css",
-    "main.js": "/static/js/main.14b721cc.js",
+    "main.js": "/static/js/main.6e4dd584.js",
     "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
     "static/media/fileSystem.png": "/static/media/fileSystem.cf6ee262e8e175e81636.png",
     "static/media/mlMoralAnalysis.png": "/static/media/mlMoralAnalysis.fe3bb1895a5f57350456.png",
@@ -10,15 +10,17 @@
     "static/media/memoryManagement.png": "/static/media/memoryManagement.32b17d7cb0e19e1ad065.png",
     "static/media/instagramClone.png": "/static/media/instagramClone.34deca10532df5e5bffa.png",
     "static/media/instaAccount.png": "/static/media/instaAccount.75b7e96ab97cf3f1745c.png",
-    "static/media/testing2.png": "/static/media/testing2.eaac983b56aae5e0960f.png",
-    "static/media/testing.png": "/static/media/testing.4bf34ebd2769a7ae911c.png",
+    "static/media/paperPage1.png": "/static/media/paperPage1.eaac983b56aae5e0960f.png",
+    "static/media/paperPage2.png": "/static/media/paperPage2.4bf34ebd2769a7ae911c.png",
+    "static/media/schedulingDiagram.png": "/static/media/schedulingDiagram.589fc80d7e8baef8b7c8.png",
+    "static/media/resourceTimeline.png": "/static/media/resourceTimeline.0b0c31dc6cfcd441b649.png",
     "index.html": "/index.html",
     "main.9df12cd1.css.map": "/static/css/main.9df12cd1.css.map",
-    "main.14b721cc.js.map": "/static/js/main.14b721cc.js.map",
+    "main.6e4dd584.js.map": "/static/js/main.6e4dd584.js.map",
     "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9df12cd1.css",
-    "static/js/main.14b721cc.js"
+    "static/js/main.6e4dd584.js"
   ]
 }
