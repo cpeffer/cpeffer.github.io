@@ -1,5 +1,5 @@
-import project1Image from '../images/threadingLibrary.png';
 import project2Image from '../images/memoryManagement.png';
+import project1Image from '../images/threadingLibrary.png';
 import project3Image from '../images/fileSystem.png';
 import project4Image from '../images/instagramClone.png';
 import project6Image from '../images/mlMoralAnalysis.png';
@@ -9,6 +9,10 @@ import paperPage2 from '../images/paperPage2.png';
 import paperPage1 from '../images/paperPage1.png';
 import schedulingDiagram from '../images/schedulingDiagram.png';
 import resourceTimeline from '../images/resourceTimeline.png';
+import memoryCache from '../images/memoryCache.png';
+import addressTranslation from '../images/addressTranslation.png';
+import fileSystem from '../images/fileSystemDiagram.png';
+import hierarchicalDiagram from '../images/hierarchicalDiagram.png';
 
 
 
@@ -55,22 +59,24 @@ const projects: ProjectData[] = [
   {
     id: 3,
     title: "Memory Manager",
-    overview: "Developed a comprehensive system memory manager that interfaces with applications to abstract physical memory restrictions to virtual memory using swap-backed & file-backed pages and a translation lookaside buffer.",
+    overview: "Created a system memory manager which provides the abstraction of a shared virtual memory space using advanced caching techniques to ensure efficient memory management.",
     image: project2Image,
+    images: [ memoryCache, addressTranslation],
     difficulty: 4,
-    technologies: ["C++", "Caching Techniques", ""],
-    context: "Advanced operating systems course project.",
-    takeaway: "Learned about memory management, virtual memory, and the importance of planning and state diagrams."
+    technologies: ["C++", "Caching", "Shadowing"],
+    context: "I implemented a virtual memory management system for an operating system. It includes functionalities for handling memory allocation, page faults, and process management like creating and destroying address spaces. Key components include shadow page tables for tracking page states, an eviction clock algorithm for page replacement, and mechanisms for copy-on-write and pinning memory. The system interfaces with simulated hardware to manage physical memory, swap space, and file I/O, ensuring efficient and correct memory operations.",
+    takeaway: "I learned how to optimize slow and expensive operations through caching, utilizing shadow page tables and state diagrams to abstract memory contraints."
   },
   {
     id: 4,
     title: "Multithreaded Network File System",
-    overview: "Created a persistent network file system and interface which handles the transition from disk memory to the operating system and metadata such as permissions and hierarchical structure.",
+    overview: "Developed a persistent network file system and interface which concurrent clients can use to read, write, and manage files across a network.",
     image: project3Image,
     difficulty: 4,
+    images: [ fileSystem, hierarchicalDiagram],
     technologies: ["C++", "Networking", "Hierarchical File Systems", "Atomicity", "Concurrency"],
-    context: "Advanced operating systems course project.",
-    takeaway: "Learned about file system design, concurrency control, and network programming."
+    context: "I built a multithreaded network file server that supports Create, Read, Write, and Delete (CRID) operations on files and directories organized in a persistent, hierarchical structure, requiring consistency through crashes and outages. The file server uses client-server networking for handling concurrent requests. It ensures atomicity by completing complex operations fully or not at all, maintains consistency through specific ordering of disk writes, and optimizes performance by minimizing disk I/Os and efficiently managing resources.",
+    takeaway: "I learned how to maintain persistent data structures through building atomic actions, culminating in the deployment of a network file system."
   },
   {
     id: 5,
