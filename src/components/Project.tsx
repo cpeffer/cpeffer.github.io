@@ -15,7 +15,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
       <p><strong>Technologies/Concepts:</strong> {project.technologies.join(', ')}</p>
       {project.pdfLink && (
         <a href={project.pdfLink} download style={{ textDecoration: 'none', color: 'inherit' }}>
-          <button>Download PDF</button>
+          <button>Download Full Paper</button>
         </a>
       )}
       {project.images && project.images.length > 0 && (

@@ -33,7 +33,7 @@ const projects: ProjectData[] = [
   {
     id: 1,
     title: "Machine Learning Moral Analysis",
-    overview: 'Coauthored a research paper investigating the ability of ML models to predict human morality based solely on textual data from the Reddit community r/AmItheAsshole, utilizing various algorithms and techniques to analyze linguistic patterns and contextual features.',
+    overview: 'Coauthored a research paper investigating the ability of ML models to predict human morality based solely on textual data from the Reddit community r/AmItheAsshole.',
     image: project6Image,
     images: [
       paperPage1,
@@ -42,8 +42,8 @@ const projects: ProjectData[] = [
     difficulty: 5,
     pdfLink: "/pdfs/ColtonPefferMoralAnalysis.pdf",
     technologies: ["Python", "Pytorch", "Pandas", "Scikit-learn", "Jupyter Notebook"],
-    context: "Capstone project for a machine learning course at the University of Michigan.",
-    takeaway: "Gained experience in machine learning, data cleaning, model training, and ethical considerations in AI."
+    context: 'We investigated how well different machine learning models could predict whether a post on Reddit\'s r/AmItheAsshole subreddit would be labeled as "asshole" or "not the asshole".  This is a popular forum where users post scenarios and ask if they are in the wrong (the asshole), followed by a community vote. We engineered features using techniques such as Doc2Vec embeddings, LIWC categories, and n-gram extraction to capture linguistic and contextual patterns in the posts. Our approach compared interpretable models (e.g., logistic regression and random forests) with deep learning architectures (e.g., BERT fine-tuning and bidirectional GRU networks), achieving the highest balanced accuracy with BERT due to its ability to model complex contextual relationships. We also addressed class imbalance and performed extensive feature ablation studies to understand which textual elements most influenced moral judgments.',
+    takeaway: "I gained experience in the iterative process of building machine learning models, encompassing data sourcing, cleaning, and processing, through to model training, drawing conclusions, and reasoning about ethical considerations."
   },
   {
     id: 2,
@@ -81,16 +81,16 @@ const projects: ProjectData[] = [
   {
     id: 5,
     title: "Instagram Clone",
-    overview: "Deployed a fully-functional instagram clone complete with server & client side dynamic pages built using javascript, python, and sql.",
+    overview: "Deployed a fully-functional instagram clone complete with server & client side dynamic pages.",
     image: project4Image,
     images: [
       project4Image,
       instaAccount
     ],
     difficulty: 3,
-    technologies: ["JavaScript", "Python", "SQL", "React", "CSS", "AWS"],
-    context: "Full stack web development project.",
-    takeaway: "Learned about full stack development, API integration, and deployment to AWS."
+    technologies: ["JavaScript", "Python", "SQL", "CSS", "AWS"],
+    context: "This project is a web application that simulates a social media platform, allowing users to register, log in, create, view, and interact with posts. The backend is implemented in Python, utilizing Flask for handling API requests and SQL for database management. The frontend uses JavaScript for dynamic content and user interactions. This project was then deployed online via AWS.",
+    takeaway: "I learned how to create a full-stack application from scratch and deploy it to a cloud provider."
   },
   {
     id: 6,
@@ -99,8 +99,8 @@ const projects: ProjectData[] = [
     image: project9Image,
     difficulty: 1,
     technologies: ["Python", "Twilio API"],
-    context: "Personal project for fun.",
-    takeaway: "Learned about using APIs and automating tasks with Python."
+    context: "After my friend repeatedly spoiled the Wordle, I retaliated by creating a Python bot that texted him the answer daily from different numbers. After a week of claiming indifference, he finally caved and apologized, explaining that he did everything he could to avoid the texts but seeing just one letter ruined the game for him. This bot has since been repurposed to remind friends daily of something important or to text my mom every hour on her birthday.",
+    takeaway: "I gained experience using APIs to automate tasks and showed my friend that I am not to be trifled with."
   }
 ];
 
